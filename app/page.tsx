@@ -77,7 +77,7 @@ function ElegantShape({
   )
 }
 
-export default function HeroGeometric({
+function HeroGeometric({
   badge = "Ahmed Salah",
   title1 = "Elevate Your",
   title2 = "Digital Vision",
@@ -189,5 +189,9 @@ export default function HeroGeometric({
       <div className="absolute inset-0 bg-gradient-to-t from-[#030303] via-transparent to-[#030303]/80 pointer-events-none" />
     </div>
   )
+}
+
+export default function Page() {
+  return <HeroGeometric />
 }
 
