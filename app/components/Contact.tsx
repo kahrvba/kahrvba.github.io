@@ -29,16 +29,13 @@ const Contact = () => {
 		setLoading(true);
 		emailjs
 			.send(
-				"service_91ssn8g",
-				"template_jjegxdr",
+				"service_i5r501i",
+				"template_bqvkkwu",
 				{
-					from_name: form.name,
-					to_name: "Om Patel",
-					from_email: form.email,
-					to_email: "omunite21@gmail.com",
+					name: form.name,
 					message: form.message,
 				},
-				"VeFeVdEHL9F9_i6xp",
+				"mgJ9MmibGCxlGXez0",
 			)
 			.then(() => {
 				setLoading(false);
@@ -53,6 +50,7 @@ const Contact = () => {
 			})
 			.catch((error) => {
 				setLoading(false);
+				console.error("EmailJS error:", error);
 				alert("Sorry!! Something went wrong!!");
 			});
 	};

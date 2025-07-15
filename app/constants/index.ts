@@ -89,90 +89,83 @@ const technologies = [
 
 const experiences = [
 	{
-		title: "Wordpress Developer & UI/UX Designer",
-		company_name: "A.V.M Auto",
-		icon: "/company/avm.webp",
-		iconBg: "#383E56",
-		date: "2020 -  2023",
+		title: "Project Manager & Lead Developer",
+		company_name: "Alemdar Teknik",
+		icon: "/alemdarlogo.png",
+		iconBg: "#C0C0C0",
+		date: "2025 - Present",
 		points: [
-			"Self-Taught Expertise: Gained proficiency in WordPress and UI/UX design through independent learning.",
-			"Collaborative Design: Worked closely with stakeholders to gather feedback and iterate on the portfolio website's interactivity.",
-			"Successful Website Development: Designed and developed a visually appealing and user-friendly portfolio website using WordPress.",
-			"Positive Business Impact: Contributed to +54.25% sales and overall business growth through the improved website."
+			"Leading the redevelopment of the company’s website and online infrastructure.",
+			"Managed project timelines, stakeholder communications, and technical execution.",
+			"Resolved SEO issues, improved site indexing, and built a fast, responsive platform."
 		],
 	},
 	{
-		title: "Next.JS Developer",
-		company_name: "Sparkbright Engineering",
-		icon: "/company/sparkbright.webp",
-		iconBg: "#E6DEDD",
-		date: "2023 - 2024",
-		points: [
-			"Self-Taught Expertise: Gained proficiency in React.JS and Next.JS through independent learning.",
-			"Successful Website Development: Designed and developed a visually appealing and user-friendly portfolio website using Next.JS.",
-			"Collaborative Design: Worked closely with stakeholders to gather feedback and iterate on the portfolio website's interactivity."
-		],
-	},
-	{
-		title: "Software Developer",
-		company_name: "Way to Web Pvt. Ltd.",
-		icon: "/company/wtw.jpg",
+		title: "AI Developer & Embedded Systems Integrator",
+		company_name: "Tech Fusion Labs (Startup)",
+		icon: "/MyStartUp.png",
 		iconBg: "#E6DEDD",
 		date: "2024 - Present",
 		points: [
-			"Developing and maintaining Wordpress Site for A.V.M Auto The Car Body Shop based in Ahmedabad, Gujarat India.",
-			"Analyzing feedbacks and fixing bugs.",
-			"Search Engine Optimization.",
-			"Design Maintainence and hosting maintenance.",
+			"Founded and lead AI startup focused on real-time embedded systems and mobile apps.",
+			"Developed AI-powered mobile applications with React Native to control embedded devices.",
+			"Trained and deployed EfficientNet and DQN models for classification and sorting tasks.",
+			"Built scalable systems optimized for resource-constrained hardware like Jetson Nano."
 		],
 	},
+	{
+		title: "Research Assistant & Teaching Support",
+		company_name: "Cyprus International University (CIU)",
+		icon: "/ciulogo.png",
+		iconBg: "#D4E6F1",
+		date: "2024 (8 months)",
+		points: [
+			"Taught C++ Programming and Logic Design for engineering students.",
+			"Led lab sessions, created assignments, and provided technical mentorship.",
+			"Assisted faculty with academic research and course material development."
+		],
+	},
+	{
+		title: "Full Stack Developer & Mobile App Developer",
+		company_name: "Freelance",
+		icon: "/upwork.png",
+		iconBg: "#383E56",
+		date: "2022 - Present",
+		points: [
+			"Built full-stack web and cross-platform mobile apps using React Native, Next.js, Supabase, and Tailwind CSS.",
+			"Integrated AI models and OpenAI APIs into client applications for enhanced functionality.",
+			"Handled backend architecture, authentication, deployment, and maintenance for production systems."
+		],
+	}
 ];
+
+
+
+
+
+
 
 const testimonials = [
 	{
 		id: 1,
 		testimonial:
-			"Behance is a social media platform owned by Adobe whose main focus is to showcase and discover creative work.",
-		name: "Om Patel",
-		image: "/socialmedia/behance.svg",
-		link: "https://www.behance.net/omthecreator",
+			"LinkedIn is a business and employment-focused social media platform that works through websites and mobile apps.",
+		name: "Ahmed Mohammed",
+		image: "/socialmedia/linkedin.svg",
+		link: "https://www.linkedin.com/in/ahmedsmohammed998",
 	},
 	{
 		id: 2,
 		testimonial:
-			"LinkedIn is a business and employment-focused social media platform that works through websites and mobile apps.",
-		name: "Om Patel",
-		image: "/socialmedia/linkedin.svg",
-		link: "https://www.linkedin.com/in/om-patel-401068143/",
-	},
-	{
-		id: 3,
-		testimonial:
-			"Dribbble is a self-promotion and social networking platform for digital designers and creatives. It serves as a design portfolio.",
-		name: "Om Patel",
-		image: "/socialmedia/dribble.svg",
-		link: "https://dribbble.com/om2121",
-	},
-	{
-		id: 4,
-		testimonial:
-			"Also do check out my UI/UX Portfolio where I have shared by design studies.",
-		name: "Om Patel",
-		image: "/socialmedia/portfolio.svg",
-		link: "https://omthecreator.netlify.app/",
-	},
-	{
-		id: 5,
-		testimonial:
 			"Also do check out my Github Profile where I have shared all my codes from basic to advanced.",
-		name: "Om Patel",
+		name: "kahrvba",
 		image: "/tech/github.webp",
-		link: "https://github.com/omunite215",
+		link: "https://github.com/kahrvba",
 	},
 ];
 
 
-const projects :{
+const projects: {
 	name: string;
 	description: string;
 	tags: {
@@ -180,147 +173,77 @@ const projects :{
 		color: string;
 	}[];
 	image: string;
-	source_code_link?: string;
 	deploy_link: string;
-	platform: "Netlify" | "Vercel" | "Figma" | "Wordpress" | "Web"
+	platform: "Vercel" | "Figma" | "Web";
 }[] = [
 	{
-		name: "A.V.M Auto Portfolio",
+		name: "Alemdar Teknik Website",
 		description:
-			"A Designed and developed a visually appealing and user-friendly portfolio website using WordPress.",
+			"Led the full redevelopment of Alemdar Teknik’s corporate website with a clean, fast, SEO-optimized Next.js frontend.",
 		tags: [
-			{
-				name: "wordpress",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "google-translate",
-				color: "green-text-gradient",
-			},
+			{ name: "next.js", color: "blue-text-gradient" },
+			{ name: "tailwind", color: "green-text-gradient" },
+			{ name: "seo", color: "orange-text-gradient" },
 		],
-		image: "/projectimg/avm.webp",
-		platform: "Wordpress",
-		deploy_link: "https://avmauto.in/",
-	},
-	{
-		name: "Sparkbright Engineering Portfolio",
-		description:
-			" Designed and developed a visually appealing and user-friendly portfolio website using Next.JS.",
-		tags: [
-			{
-				name: "next",
-				color: "red-text-gradient",
-			},
-			{
-				name: "Next UI",
-				color: "orange-text-gradient",
-			},
-			{
-				name: "tailwind",
-				color: "blue-text-gradient",
-			},
-		],
-		image: "/projectimg/sparkbright.png",
-		source_code_link: "https://github.com/omunite215/React-Admin-DashBoard",
-		platform: "Web",
-		deploy_link: "https://sparkbright.in/",
-	},
-	{
-		name: "HooBank",
-		description:
-			"A responsive Bank HomePage showcasing different features such as various payment gateways integration, easy money transfer, advanced security, etc. It has a beautiful interface made using Tailwind CSS and React",
-		tags: [
-			{
-				name: "next",
-				color: "green-text-gradient",
-			},
-			{
-				name: "tailwind",
-				color: "blue-text-gradient",
-			},
-		],
-		image: "/projectimg/hoobank.webp",
-		source_code_link: "https://github.com/omunite215/hoobank",
+		image: "/alemdarteknik.png",
+		deploy_link: "https://alemdarteknik.com/",
 		platform: "Vercel",
-		deploy_link: "https://hoobankbyom.netlify.app/",
 	},
 	{
-		name: "MERN Dashboard",
+		name: "Isnad Foundation",
 		description:
-			" Designed and developed a visually appealing and user-friendly Data Analytics Dashboard using MERN",
+		"Multilingual Next.js site that matches Palestinian students with full scholarships (Pulse of Life, Palestinian Talented, Ibn Khaldun, etc.) and gives donors a transparent, one‑click PayTR gateway to fund the programs. The tab‑driven UI showcases each scholarship track, real‑time metrics, and success stories while remaining blazing‑fast and fully responsive.",
 		tags: [
-			{
-				name: "react",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "materialui",
-				color: "orange-text-gradient",
-			},
-			{
-				name: "MongoDB",
-				color: "green-text-gradient",
-			},
-			{
-				name: "Express",
-				color: "pink-text-gradient",
-			},
+			{ name: "next.js", color: "blue-text-gradient" },
+			{ name: "tailwind", color: "green-text-gradient" },
+			{ name: "supabase", color: "orange-text-gradient" },
 		],
-		image: "/projectimg/mern.png",
-		source_code_link: "https://github.com/omunite215/Project_MERN-Dashboard",
-		platform: "Web",
-		deploy_link: "https://admin-frontend-r705.onrender.com/",
-	},
-	{
-		name: "Metaverse Web 3.0",
-		description:
-			"A Modern UI/UX Landing Page using Framer Motion and TailwindCSS with a feel and looks of Web 3.0",
-		tags: [
-			{
-				name: "react",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "tailwind",
-				color: "green-text-gradient",
-			},
-			{
-				name: "framer-motion",
-				color: "orange-text-gradient",
-			},
-		],
-		image: "/projectimg/metaverse.png",
-		source_code_link: "https://github.com/omunite215/Project_Metaverse",
+		image: "/isnadf.png",
+		deploy_link: "https://isnadf.org/",
 		platform: "Vercel",
-		deploy_link: "https://project-metaverse-beta.vercel.app/",
 	},
 	{
-		name: "Issue Tracker",
+		name: "Naqlyat Tech (In Development)",
 		description:
-			"A Next.JS Full Stack Issue Tracker made using Next.Js, ShadCN UI, Prisma, mySQL with latest features like Next.JS Server Components, and Serverless features.",
+		  "A mobile app unifying logistics and transport companies across Oman into one digital platform. Enables clients to request transport services, track shipments, and connect with verified logistics providers. Designed for scale, with modern UI/UX in progress on Figma and development underway using React Native.",
 		tags: [
-			{
-				name: "next",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "tailwind",
-				color: "green-text-gradient",
-			},
-			{
-				name: "shadCN",
-				color: "orange-text-gradient",
-			},
-			{
-				name: "mySQL",
-				color: "green-text-gradient",
-			},
+		  { name: "react-native", color: "blue-text-gradient" },
+		  { name: "logistics", color: "green-text-gradient" },
+		  { name: "figma", color: "orange-text-gradient" }
 		],
-		image: "/projectimg/issuetracker.png",
-		source_code_link: "https://github.com/omunite215/Project_Issue-Tracker",
-		platform: "Vercel",
-		deploy_link: "https://project-issue-tracker.vercel.app/",
-	},
+		image: "/project3.png", // Replace with your Figma preview if needed
+		deploy_link: "https://www.figma.com/design/lsHapdOCbNnw4YT9REaN8d/Naqleyatk?node-id=0-1&t=8oEVV0NmIGa8g4nd-1", // Replace with actual link
+		platform: "Figma"
+	  },
+	  {
+		name: "SAMARA (In Development)",
+		description:
+		  "A mobile-first marketplace platform aggregating online shops across Qatar into one unified app. Designed to simplify discovery, orders, and payments for end users while offering small and medium e-commerce stores a centralized presence. UI/UX is under active design in Figma, with planned implementation in React Native.",
+		tags: [
+		  { name: "react-native", color: "blue-text-gradient" },
+		  { name: "marketplace", color: "green-text-gradient" },
+		  { name: "figma", color: "orange-text-gradient" }
+		],
+		image: "/project4.png", // Replace with actual preview/screenshot
+		deploy_link: "https://www.figma.com/design/3CXV2Nscd3be8En4i13d4d/Untitled?node-id=0-1&t=UnCot0MRFKsrCvko-1", // Replace with real Figma URL
+		platform: "Figma"
+	  },
+	  {
+		name: "Subbiy",
+		description:
+		  "Subbiy is an all-in-one platform for managing teams, billing, client engagement, and retention — replacing multiple SaaS tools in one unified system. The marketing website is built with Next.js and Tailwind CSS, fully deployed and live.",
+		tags: [
+		  { name: "next.js", color: "blue-text-gradient" },
+		  { name: "tailwind", color: "green-text-gradient" },
+		  { name: "vercel", color: "orange-text-gradient" }
+		],
+		image: "/project5.png",
+		deploy_link: "https://subbiy.vercel.app", // replace with actual live URL
+		platform: "Vercel"
+	  }
+	  
+
 ];
+
 
 export { services, technologies, experiences, testimonials, projects };

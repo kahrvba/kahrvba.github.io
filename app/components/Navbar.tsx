@@ -3,7 +3,6 @@ import { navLinks } from "@/app/constants";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import ResumeButton from "./ResumeButton";
 
 const Navbar = () => {
 	const [active, setActive] = useState("");
@@ -41,7 +40,7 @@ const Navbar = () => {
 						window.scrollTo(0, 0);
 					}}
 				>
-					<Link href="https://github.com/omunite215">
+					<Link href="https://github.com/kahrvba">
 						<Image
 							src="/logo.png"
 							width={80}
@@ -52,7 +51,7 @@ const Navbar = () => {
 						/>
 					</Link>
 					<p className="text-white text-[18px] font-bold cursor-pointer flex">
-						Om &nbsp; <span className="sm:block hidden ">| omunite215</span>
+						Ahmed &nbsp; <span className="sm:block hidden ">| Mohammed</span>
 					</p>
 				</div>
 
@@ -70,9 +69,7 @@ const Navbar = () => {
 						</li>
 					))}
 				</ul>
-				<div className="mt-2 lg:block hidden">
-					<ResumeButton />
-				</div>
+				
 
 				<div className="sm:hidden flex flex-1 justify-end items-center">
 					<Image
@@ -105,11 +102,6 @@ const Navbar = () => {
 									<Link href={`#${nav.id}`}>{nav.title}</Link>
 								</li>
 							))}
-							<li>
-								<div className="mt-2">
-									<ResumeButton />
-								</div>
-							</li>
 						</ul>
 					</div>
 				</div>
