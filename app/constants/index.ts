@@ -212,7 +212,7 @@ const projects: {
 		  { name: "figma", color: "orange-text-gradient" }
 		],
 		image: "/project3.png", // Replace with your Figma preview if needed
-		deploy_link: "https://www.figma.com/design/lsHapdOCbNnw4YT9REaN8d/Naqleyatk?node-id=0-1&t=8oEVV0NmIGa8g4nd-1", // Replace with actual link
+		deploy_link: "", // Replace with actual link
 		platform: "Figma"
 	  },
 	  {
@@ -225,7 +225,7 @@ const projects: {
 		  { name: "figma", color: "orange-text-gradient" }
 		],
 		image: "/project4.png", // Replace with actual preview/screenshot
-		deploy_link: "https://www.figma.com/design/3CXV2Nscd3be8En4i13d4d/Untitled?node-id=0-1&t=UnCot0MRFKsrCvko-1", // Replace with real Figma URL
+		deploy_link: "", // Replace with real Figma URL
 		platform: "Figma"
 	  },
 	  {
