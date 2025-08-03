@@ -19,6 +19,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+			<head>
+			<meta name="google-adsense-account" content="ca-pub-2449405226749473" />
+			</head>
 			<body className={fontSans.variable}>{children}</body>
 		</html>
 	);
