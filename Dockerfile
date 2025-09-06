@@ -7,8 +7,14 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 
-# Copy the rest of the app
-COPY . .
+# Copy application source code
+COPY app/ ./app/
+COPY public/ ./public/
+COPY next.config.mjs ./
+COPY tailwind.config.ts ./
+COPY tsconfig.json ./
+COPY next-env.d.ts ./
+COPY postcss.config.mjs ./
 
 # Build the Next.js app
 RUN npm run build
