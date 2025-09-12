@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins as FontSans } from "next/font/google";
 import "@/app/styles/globals.css";
+import { Analytics } from "@vercel/analytics/next"
 
 const fontSans = FontSans({
 	subsets: ["latin"],
@@ -22,7 +23,10 @@ export default function RootLayout({
 			<head>
 			<meta name="google-adsense-account" content="ca-pub-2449405226749473" />
 			</head>
-			<body className={fontSans.variable}>{children}</body>
+			<body className={fontSans.variable}>
+				{children}
+				<Analytics />
+			</body>
 		</html>
 	);
 }
