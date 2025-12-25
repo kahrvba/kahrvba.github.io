@@ -240,6 +240,19 @@ const projects: {
 		image: "/project5.png",
 		deploy_link: "https://subbiy.vercel.app", // replace with actual live URL
 		platform: "Vercel"
+	  },
+	  {
+		name: "Tekamul",
+		description:
+		  "A modern, multilingual landing page for Tekamul, a trusted import/export company facilitating trade between Turkey and Russia. Built with Next.js and featuring comprehensive service showcases, company vision, and seamless user experience for businesses seeking international trade solutions.",
+		tags: [
+		  { name: "next.js", color: "blue-text-gradient" },
+		  { name: "tailwind", color: "green-text-gradient" },
+		  { name: "landing-page", color: "orange-text-gradient" }
+		],
+		image: "/tekamul.png",
+		deploy_link: "https://www.tekamuls.com/en",
+		platform: "Vercel"
 	  }
 	  
 
